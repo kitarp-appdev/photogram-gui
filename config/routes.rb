@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   get("/users", { :controller => "users", :action => "index" })
 
+  get("/insert_user_record", { :controller => "users", :action => "create" })
+
+  get("/update_user/:url_user", { :controller => "users", :action => "update" })
+
   get("/users/:path_username", { :controller => "users", :action => "show" })
 
   get("/photos", { :controller => "photos", :action => "index" })
