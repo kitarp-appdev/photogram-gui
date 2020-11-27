@@ -79,4 +79,5 @@ class PhotosController < ApplicationController
 
     redirect_to(next_url)
   end
+
 end
